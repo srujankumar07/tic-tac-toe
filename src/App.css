@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .game {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
   }
-}
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #000;
+    outline: none;
+  }
+  
+  .square:hover {
+    background-color: #ddd;
+  }
+  
+  .info {
+    margin-top: 20px;
+  }
+  
+  .reset-btn {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .reset-btn:hover {
+    background-color: #005f5f;
+  }
+  
